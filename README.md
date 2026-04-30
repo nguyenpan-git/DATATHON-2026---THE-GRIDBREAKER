@@ -75,10 +75,8 @@ Cách chạy:
 
 ---
 
-## 4. Dataset
-- Nguồn: [Kaggle - DATATHON 2026 - Vòng Sơ loại](https://www.kaggle.com/competitions/datathon-2026-round-1/data)
-
 ## 4. Mô tả Dữ liệu
+- Nguồn: [Kaggle - DATATHON 2026 - Vòng Sơ loại](https://www.kaggle.com/competitions/datathon-2026-round-1/data)
 
 Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động của doanh nghiệp, được chia thành 4 lớp dữ liệu chính.
 
