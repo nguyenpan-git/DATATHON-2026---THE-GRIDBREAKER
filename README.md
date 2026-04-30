@@ -68,10 +68,9 @@ Mô tả: [Chạy tuần tự các cell từ trên xuống dưới để xuất 
 Mã nguồn trích xuất đặc trưng (Feature Engineering), huấn luyện và tối ưu mô hình:
 
 File: notebooks/[Tên file notebook Model].ipynb hoặc script src/train.py
-Cách chạy:
-```bash
 
-```
+Cách chạy:
+
 Đầu ra: File dự đoán cuối cùng được lưu tại outputs/submissions/submission.csv với đúng format yêu cầu của Kaggle.
 
 ---
