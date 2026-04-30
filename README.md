@@ -84,7 +84,7 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 | :--- | :--- | :--- |
 | **Master** | `products.csv`, `customers.csv`, `promotions.csv`, `geography.csv` | Thông tin tham chiếu cốt lõi: Danh mục sản phẩm, thông tin khách hàng, các chiến dịch khuyến mãi và phân bổ địa lý. |
 | **Transaction** | `orders.csv`, `order_items.csv`, `payments.csv`, `shipments.csv`, `returns.csv`, `reviews.csv` | Lịch sử giao dịch chi tiết: Đơn đặt hàng, chi tiết từng dòng sản phẩm, thanh toán, quá trình vận chuyển, hàng hoàn trả và đánh giá của khách hàng. |
-| **Operational** | `inventory.csv`, `inventory_enhanced.csv`, `web_traffic.csv` | Dữ liệu vận hành thực tế: Ảnh chụp tồn kho cuối tháng, các chỉ số tồn kho mở rộng và lưu lượng người dùng truy cập website hàng ngày. |
+| **Operational** | `inventory.csv`, `inventory_enhanced.csv`, `web_traffic.csv` | Dữ liệu vận hành thực tế tồn kho cuối tháng, các chỉ số tồn kho mở rộng và lưu lượng người dùng truy cập website hàng ngày. |
 | **Analytical** | `sales.csv` (Train), `sales_test.csv` (Test) | Dữ liệu tổng hợp doanh thu phục vụ trực tiếp cho bài toán huấn luyện và dự báo. |
 
 **Thông tin bài toán Dự báo (Forecasting):**
