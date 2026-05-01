@@ -34,7 +34,7 @@ Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời tr
 
 ```
 DATATHON-2026/
-├── data/                    # Chứa dữ liệu gốc và dữ liệu đã xử lý
+├── report/                  # Chứa dashboard và báo cáo phân tích
 ├── notebooks/               # Source code phân tích và mô hình (.ipynb)
 ├── src/                     # Source code dạng script (.py) phục vụ pipeline
 ├── outputs/                 # Chứa biểu đồ báo cáo, file nộp Kaggle (submission.csv)
@@ -57,21 +57,30 @@ pip install -r requirements.txt
 ```
 ---
 
-## 3. Cách sử dụng
+## 3. Cách sử dụng (thư mục notebooks)
 ### 3.1. Phân tích Khám phá Dữ liệu (EDA)
-Toàn bộ mã nguồn phân tích, làm sạch dữ liệu và vẽ biểu đồ được đặt trong:
+Toàn bộ mã nguồn khám phá dữ liệu tổng quan, làm sạch bước đầu và vẽ biểu đồ được đặt trong:
 
-File: notebooks/[Tên file notebook EDA].ipynb
-Mô tả: [Chạy tuần tự các cell từ trên xuống dưới để xuất biểu đồ ra thư mục outputs]
+* **File:** `EDA_1.ipynb`
+* **File:** `EDA_2.ipynb`
 
-### 3.2. Huấn luyện Mô hình
+  * **Mô tả:** Thực hiện nạp dữ liệu, làm sạch bước đầu, xử lý dữ liệu bị thiếu (missing values) và trực quan hóa các thông tin cơ bản.
+
+### 3.2. Phân tích Chuyên sâu (In-depth Analysis)
+Dựa trên kết quả từ quá trình EDA, các phân tích chi tiết theo từng khía cạnh kinh doanh được đặt trong các file sau:
+
+* **File:** `Revenue_Analysis.ipynb`
+  * **Mô tả:** Phân tích doanh thu, tập trung vào việc bóc tách các yếu tố mang lại lợi nhuận cho mô hình kinh doanh.
+* **File:** `DefectiveProduct_Logistic_Analysis.ipynb`
+  * **Mô tả:** Phân tích tỷ lệ sản phẩm lỗi (Defect rates) và các rủi ro, thời gian liên quan đến khâu vận chuyển (Logistics).
+* **File:** `Performance_SupplyChain_Operations_Analysis.ipynb`
+  * **Mô tả:** Đánh giá hiệu suất vận hành tổng thể của chuỗi cung ứng.
+
+### 3.3. Huấn luyện Mô hình
 Mã nguồn trích xuất đặc trưng (Feature Engineering), huấn luyện và tối ưu mô hình:
 
-File: notebooks/[Tên file notebook Model].ipynb hoặc script src/train.py
-
-Cách chạy:
-
-Đầu ra: File dự đoán cuối cùng được lưu tại outputs/submissions/submission.csv với đúng format yêu cầu của Kaggle.
+* **File:** `VinUniModel.ipynb`
+  * **Đầu ra:** File dự đoán cuối cùng được lưu tại outputs/submissions/submission.csv với đúng format yêu cầu của Kaggle.
 
 ---
 
@@ -84,7 +93,7 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 | :--- | :--- | :--- |
 | **Master** | `products.csv`, `customers.csv`, `promotions.csv`, `geography.csv` | Thông tin tham chiếu cốt lõi: Danh mục sản phẩm, thông tin khách hàng, các chiến dịch khuyến mãi và phân bổ địa lý. |
 | **Transaction** | `orders.csv`, `order_items.csv`, `payments.csv`, `shipments.csv`, `returns.csv`, `reviews.csv` | Lịch sử giao dịch chi tiết: Đơn đặt hàng, chi tiết từng dòng sản phẩm, thanh toán, quá trình vận chuyển, hàng hoàn trả và đánh giá của khách hàng. |
-| **Operational** | `inventory.csv`, `inventory_enhanced.csv`, `web_traffic.csv` | Dữ liệu vận hành thực tế tồn kho cuối tháng, các chỉ số tồn kho mở rộng và lưu lượng người dùng truy cập website hàng ngày. |
+| **Operational** | `inventory.csv`, `inventory_enhanced.csv`, `web_traffic.csv` | Dữ liệu vận hành thực tế: Ảnh chụp tồn kho cuối tháng, các chỉ số tồn kho mở rộng và lưu lượng người dùng truy cập website hàng ngày. |
 | **Analytical** | `sales.csv` (Train), `sales_test.csv` (Test) | Dữ liệu tổng hợp doanh thu phục vụ trực tiếp cho bài toán huấn luyện và dự báo. |
 
 **Thông tin bài toán Dự báo (Forecasting):**
@@ -92,15 +101,3 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 - **Đơn vị dự báo:** Tổng doanh thu và giá vốn (`COGS`) theo từng ngày (`Date`).
                       |
 ---
-## 5. Kết quả
-### 5.1. Insight Kinh doanh (Từ EDA)
-Khám phá dữ liệu đã chỉ ra một số vấn đề và cơ hội kinh doanh đáng chú ý:
-
-### 5.2. Hiệu suất Mô hình 
-Kết quả đánh giá mô hình tốt nhất ([Điền tên mô hình]) trên tập Validation / Test (Leaderboard):
-
-| Metric | Ý nghĩa | Tập Validation (Local) | Tập Test (Kaggle Public LB) |
-| :---: | :--- | :---: | :---: |
-| **MAE** | Sai số tuyệt đối trung bình | `[Điền số...]` | `[Điền số...]` |
-| **RMSE** | Căn bậc hai sai số toàn phương | `[Điền số...]` | `[Điền số...]` |
-| **R²** | Mức độ giải thích sự biến thiên | `[Điền số...]` | `[Điền số...]` |
