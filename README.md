@@ -46,8 +46,8 @@ DATATHON-2026/
 ## 2. Cài đặt
 ### 2.1. Clone repository:
 ```bash
-git clone https://github.com/[Tên-Github-Của-Bạn]/[Tên-Repo].git
-cd [Tên-Repo]
+git clone https://github.com/nguyenpan-git/DATATHON-2026---THE-GRIDBREAKER.git
+cd DATATHON-2026---THE-GRIDBREAKER
 ```
 ### 2.2. Cài đặt thư viện
 Đảm bảo đang sử dụng Python 3.8+.
