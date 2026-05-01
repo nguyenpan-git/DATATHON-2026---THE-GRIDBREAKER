@@ -37,7 +37,7 @@ DATATHON-2026/
 ├── report/                  # Chứa dashboard và báo cáo phân tích
 ├── notebooks/               # Source code phân tích và mô hình (.ipynb)
 ├── src/                     # Source code dạng script (.py) phục vụ pipeline
-├── outputs/                 # Chứa biểu đồ báo cáo, file nộp Kaggle (submission.csv)
+├── outputs/                 # Chứa file nộp Kaggle (submission.csv)
 ├── requirements.txt         # Thư viện môi trường
 └── README.md
 ```
