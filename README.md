@@ -17,7 +17,7 @@ Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời tr
 
 - **Mô hình được sử dụng:** Prophet
 - **Phương pháp giải thích mô hình (Explainability):** SHAP
-- **Chỉ số đánh giá (Metrics):** MAE, RMSE, R²-score.
+- **Chỉ số đánh giá (Metrics):** MAE, RMSE, MAPE, R²-score.
 
 ## Mục lục
 1. [Cấu trúc Repository](#1-cấu-trúc-repository)
