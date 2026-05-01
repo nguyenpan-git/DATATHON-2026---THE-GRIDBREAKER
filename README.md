@@ -13,7 +13,7 @@
 Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời trang thương mại điện tử tại Việt Nam (04/07/2012 - 31/12/2022). Bài toán yêu cầu hai nhiệm vụ chính:
 
 1. **Trực quan hoá & Phân tích (EDA):** Khám phá dữ liệu để tìm ra các insight có ý nghĩa kinh doanh, đánh giá từ mức độ mô tả (Descriptive) đến đề xuất hành động (Prescriptive).
-2. **Dự báo Doanh thu (Sales Forecasting):** Xây dựng mô hình học máy để dự báo cột `Revenue` và `COGS` trong khoảng thời gian từ 01/01/2023 đến 01/07/2024.
+2. **Dự báo Doanh thu (Sales Forecasting):** Xây dựng mô hình học máy để dự báo cột `Revenue` trong khoảng thời gian từ 01/01/2023 đến 01/07/2024.
 
 - **Mô hình được sử dụng:** Prophet
 - **Phương pháp giải thích mô hình (Explainability):** SHAP
