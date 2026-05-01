@@ -91,7 +91,7 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 
 **Thông tin bài toán Dự báo (Forecasting):**
 - **Biến mục tiêu (Target Variable):** `Revenue` (Tổng doanh thu thuần).
-- **Đơn vị dự báo:** Tổng doanh thu và giá vốn (`COGS`) theo từng ngày (`Date`).
+- **Đơn vị dự báo:** Doanh thu theo từng ngày (`Date`).
                       |
 ---
 ## 5. Kết quả
