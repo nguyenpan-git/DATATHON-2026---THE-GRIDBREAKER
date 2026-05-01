@@ -33,6 +33,7 @@ Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời tr
 ```
 DATATHON-2026/
 ├── report/                  # Chứa dashboard và báo cáo phân tích
+│   └── Visuals/             # Chứa các hình ảnh, biểu đồ trực quan được xuất ra
 ├── notebooks/               # Source code phân tích và mô hình (.ipynb)
 ├── src/                     # Source code dạng script (.py) phục vụ pipeline
 ├── outputs/                 # Chứa file nộp Kaggle (submission.csv)
