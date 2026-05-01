@@ -98,5 +98,5 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 ### 5.1. Insight Kinh doanh (thư mục report)
 Khám phá dữ liệu đã chỉ ra một số vấn đề và cơ hội kinh doanh đáng chú ý được báo trong trong mục `report`.
 
-### 5.2. Hiệu suất Mô hình 
+### 5.2. Mô hình Dự đoán 
 Kết quả dự đoán tốt nhất được lưu trong thư mục `outputs/submission.csv` và được đánh giá chi tiết trong `report`.
