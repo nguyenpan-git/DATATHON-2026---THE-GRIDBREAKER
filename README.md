@@ -21,7 +21,7 @@ Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời tr
 
 ## Mục lục
 1. [Cấu trúc Repository](#1-cấu-trúc-repository)
-2. [Cài đặt](#2-cài-đặt)
+2. [Cài đặt thư viện](#2-cài-đặt-thư-viện)
 3. [Cách sử dụng](#3-cách-sử-dụng)
 4. [Mô tả Dữ liệu](#4-mô-tả-dữ-liệu)
 5. [Kết quả](#5-kết-quả)
