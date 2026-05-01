@@ -73,7 +73,7 @@ Dựa trên kết quả từ quá trình EDA, các phân tích chi tiết theo t
 Mã nguồn trích xuất đặc trưng (Feature Engineering), huấn luyện và tối ưu mô hình:
 
 * **File:** `VinUniModel.ipynb`
-  * **Đầu ra:** File dự đoán cuối cùng được lưu tại outputs/submissions/submission.csv với đúng format yêu cầu của Kaggle.
+  * **Đầu ra:** File dự đoán cuối cùng được lưu tại outputs/submission.csv với đúng format yêu cầu của Kaggle.
 
 ---
 
