@@ -99,4 +99,4 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 Khám phá dữ liệu đã chỉ ra một số vấn đề và cơ hội kinh doanh đáng chú ý được báo trong trong mục `report`.
 
 ### 5.2. Hiệu suất Mô hình 
-Kết quả dự đoán mô hình tốt nhất được lưu trong thư mục `outputs/submission.csv` và được đánh giá chi tiết trong `report`.
+Kết quả dự đoán tốt nhất được lưu trong thư mục `outputs/submission.csv` và được đánh giá chi tiết trong `report`.
