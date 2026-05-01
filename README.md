@@ -43,6 +43,7 @@ DATATHON-2026/
 
 ## 2. Cài đặt
 ### 2.1. Clone repository:
+Nếu muốn chạy code trên máy local, hãy gõ lệnh bên dưới để tải thư mục code về máy và vào trong thư mục đó rồi mới bắt đầu chạy các file Notebook.
 ```bash
 git clone https://github.com/nguyenpan-git/DATATHON-2026---THE-GRIDBREAKER.git
 cd DATATHON-2026---THE-GRIDBREAKER
