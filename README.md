@@ -17,7 +17,7 @@ Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời tr
 
 - **Mô hình được sử dụng:** Prophet
 - **Phương pháp giải thích mô hình (Explainability):** SHAP
-- **Chỉ số đánh giá (Metrics):** MAE, RMSE, MAPE, R²-score.
+- **Chỉ số đánh giá (Metrics):** MAE, RMSE, R²-score.
 
 ## Mục lục
 1. [Cấu trúc Repository](#1-cấu-trúc-repository)
@@ -44,8 +44,8 @@ DATATHON-2026/
 ## 2. Cài đặt
 ### 2.1. Clone repository:
 ```bash
-git clone https://github.com/[Tên-Github-Của-Bạn]/[Tên-Repo].git
-cd [Tên-Repo]
+git clone https://github.com/nguyenpan-git/DATATHON-2026---THE-GRIDBREAKER.git
+cd DATATHON-2026---THE-GRIDBREAKER
 ```
 ### 2.2. Cài đặt thư viện
 Đảm bảo đang sử dụng Python 3.8+.
