@@ -13,12 +13,10 @@
 Bộ dữ liệu mô phỏng hoạt động của một doanh nghiệp thời trang thương mại điện tử tại Việt Nam (04/07/2012 - 31/12/2022). Bài toán yêu cầu hai nhiệm vụ chính:
 
 1. **Trực quan hoá & Phân tích (EDA):** Khám phá dữ liệu để tìm ra các insight có ý nghĩa kinh doanh, đánh giá từ mức độ mô tả (Descriptive) đến đề xuất hành động (Prescriptive).
-2. **Dự báo Doanh thu (Sales Forecasting):** Xây dựng mô hình học máy để dự báo cột `Revenue` trong khoảng thời gian từ 01/01/2023 đến 01/07/2024.
+2. **Dự báo Doanh thu (Sales Forecasting):** Xây dựng mô hình học máy để dự báo cột `Revenue` và `COGS` trong khoảng thời gian từ 01/01/2023 đến 01/07/2024.
 
-- **Các mô hình được sử dụng:**
-    - [Điền tên mô hình...]
-- **Phương pháp giải thích mô hình (Explainability):**
-    - [Điền phương pháp...]
+- **Mô hình được sử dụng:** Prophet
+- **Phương pháp giải thích mô hình (Explainability):** SHAP
 - **Chỉ số đánh giá (Metrics):** MAE, RMSE, R²-score.
 
 ## Mục lục
@@ -45,10 +43,9 @@ DATATHON-2026/
 
 ## 2. Cài đặt
 ### 2.1. Clone repository:
-Nếu muốn chạy code trên máy tính cục bộ, dùng lệnh bên dưới để tải thư mục code về máy và vào trong thư mục đó rồi mới bắt đầu chạy các file Notebook.
 ```bash
-git clone https://github.com/nguyenpan-git/DATATHON-2026---THE-GRIDBREAKER.git
-cd DATATHON-2026---THE-GRIDBREAKER
+git clone https://github.com/[Tên-Github-Của-Bạn]/[Tên-Repo].git
+cd [Tên-Repo]
 ```
 ### 2.2. Cài đặt thư viện
 Đảm bảo đang sử dụng Python 3.8+.
@@ -102,3 +99,9 @@ Bộ dữ liệu được cung cấp bao gồm 15 files CSV về hoạt động 
 - **Đơn vị dự báo:** Tổng doanh thu và giá vốn (`COGS`) theo từng ngày (`Date`).
                       |
 ---
+## 5. Kết quả
+### 5.1. Insight Kinh doanh (thư mục report)
+Khám phá dữ liệu đã chỉ ra một số vấn đề và cơ hội kinh doanh đáng chú ý được báo trong trong mục `report`.
+
+### 5.2. Hiệu suất Mô hình 
+Kết quả đánh giá mô hình tốt nhất được lưu trong thư mục `outputs/submission.csv` và được đánh giá chi tiết trong `report`.
